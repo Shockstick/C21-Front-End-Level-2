@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-*(
+*{
     margin:0;
     padding:0;
-)
+}
 
 html{
     font-family:'Source Sans Pro', sans-serif;
@@ -13,11 +13,73 @@ html{
     line-height:1.8;
 }
 
+body{
+    background-color:#cccccc;
+}
+.wrapper{
+    background-color: white;
+    margin:0 auto;
+    max-width:1795px;
+}
+
+header{
+    height:90px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0 0 0 / 6%);
+    padding:0 40px;
+    margin-bottom:40px;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+ul.main-menu{
+    list-style:none ;
+    color: #4e4b4b;
+}
+
+li.menu-item{
+    display: inline;
+    padding-right: 15px;
+}
+
+li.menu-item:after{
+    content:"  I  ";
+    padding: left 10px;
+    color: #eaeaea;
+}
+
+ul.socials{
+    list-style: none;
+    color: #4e4b4b;
+}
+
+li.social-item{
+    display: inline-block;
+    padding-right:15px;
+}
+
+li.menu-item a,
+li.social-item a{
+    color:#4e4b4b;
+}
+
+li.menu-item a:hover,
+li.social-item a:hover{
+    color: #ca404f;
+}
+
+
 h1, h2, h3, h4, h5, h6{
-    font-family:'Karla', regular;
+    font-family:'Karla', sans-serif;
     font-style:normal;
-    kleur:#4e4b4b;
+    color:#4e4b4b;
     line-height:1.4;
+    font-weight:normal;
 }
 
 h2{
@@ -34,14 +96,80 @@ h3{
 a{
     font-family:Karla;
     font-size:14px;
-    kleur: #ca404f;
+    color: #ca404f;
     line-height:1.4;
+    text-decoration: none;
 }
 
 button{
     font-family: Karla, bold;
     font-size: 16 px;
+    height: 42px;
     color:white;
     line-height:42px;
     background-color: #ca404f;
+    padding:0 20px;
+    border: none;
+}
+
+main{
+    padding:0 100px 40px 100px ;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.recepten{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.recept{
+    width: 1040px;
+    display: flex;
+}
+
+.description{
+    width: 485px;
+    margin-right: 70px;
+}
+
+.description h4{
+    margin-top: 15px;
+}
+
+.description p{
+    margin: 60px 0;
+}
+
+
+.recept-image img{
+    width: 485px;
+}
+
+.recept-items{
+    width: 485px;
+
+}
+
+.recept-items .item{
+   display: grid;
+   grid-template-columns: auto 100px;
+   padding: bottom 10px;
+   border-bottom: 1px solid ;
+}
+
+.recept-items .item:hover{
+    background-color: #eaeaea;
+    padding-left:10px;
+}
+
+.item-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px #eaeaea;
+    margin-bottom:15px;
 }
