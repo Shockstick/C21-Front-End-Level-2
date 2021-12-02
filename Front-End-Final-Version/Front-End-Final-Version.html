@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end-Final-Version</title>
+     <link rel="stylesheet" href="css/style.css"> 
+     <script src="js/script.js" defer></script>
+     <style>body {
+    background-color: greenyellow;
+    }</style>
+
+</head>
+<body>
+    <div>
+        <button onclick="getName('Nu heb je een alarm gekregen door op mij te klikken.');">Dit is een knop</button> 
+    </div>
+
+    <div>
+        <p>Ik heb ook geleerd hoe ik het plaatje kan veranderen</p>
+        <img id="hide" onclick="hideMe();" src="images/1145267416.jpg">
+        <img id="show" onclick="show();" src="images/R.jpg">
+        <img id="tell" onclick="tell();" src="images/OIP.jpg">
+    </div>
+
+    <div>
+        <p class="som">Hoeveel dagen heeft een jaar? </p>
+        <button onclick="rekenen(365);">Hier is je antwoord</button>
+    </div>
+
+    <div>
+        <p onclick="this.style.color='purple';">Klik op mij, en ik verander van kleur</p> 
+    </div>
+
+    <div>
+        <p onclick="setColor(this, 'white', '40px');">Als je op deze tekst klik, dan verander ik van kleur en hoogte</p> 
+    </div>
+
+    
+</body>
+</html>
