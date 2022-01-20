@@ -3,7 +3,7 @@ let myInt = 6; //dit is een variabele van het datatype ______integer______ waaro
 
 //Waarom staat er let voor de variabelen? _____Zo worden variabelen aangemaakt._______ vul je antwoord in op de lijn
 
-function getName(naam){ //In op welke regel in de HTML file wordt deze functie aangeroepen ______________ vul je antwoord in op de lijn
+function getName(naam){ //In op welke regel in de HTML file wordt deze functie aangeroepen _______Op regel 17 _______ vul je antwoord in op de lijn
 
     // vul in wat naam is: naam is de Parameter___________ vul je antwoord in op de lijn, je hebt de eerste letter al gekregen
     // vul in: naam heeft de waarde ___Function_________ de waarde noemen we een Attribute__________ vul je antwoord in op de lijn, je hebt de eerste letter al gekregen
